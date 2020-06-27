@@ -1,7 +1,7 @@
 var connection = require("mongodb").MongoClient;
 var Id =  require("mongodb").ObjectId;
 
-connection.connect(`mongodb+srv://admin:${process.env.passBanco}@master-jtbmc.mongodb.net/test?retryWrites=true&w=majority`,{useUnifiedTopology: true})
+connection.connect(`mongodb+srv://admin:admin@master-jtbmc.mongodb.net/test?retryWrites=true&w=majority`,{useUnifiedTopology: true})
     .then(conn => global.conn = conn.db("almoxarifado"))
     .catch(error => console.log(error))
     
